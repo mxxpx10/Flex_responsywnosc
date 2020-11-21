@@ -18,7 +18,6 @@ div {
 .right_content {
     display: flex;
     width: 69%;
-    /*height: 100%;*/
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
@@ -33,10 +32,9 @@ div {
 .left_content {
     display: flex;
     width: 29%;
-    /*height: 90%;*/
-
 }
-@media only screen and (max-width: 800px) {
+
+@media (max-width: 800px) {
     .right_content, .left_content {
         width: 100%;
     }
@@ -45,12 +43,8 @@ div {
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .right_content, .left_content {
-        width: 100%;
-    }
-    div {
-        margin: 3px;
+@media (max-width: 400px) {
+    .right_content div, .left_content div {
         width: 100%;
     }
 }
